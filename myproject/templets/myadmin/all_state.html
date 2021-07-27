@@ -1,0 +1,49 @@
+{% extends 'myadmin/index.html' %}
+
+{% block content%}
+
+
+<section class="wrapper">
+		<div class="table-agile-info">
+ <div class="panel panel-default">
+    <div class="panel-heading">
+     All State 
+    </div>
+    <div>
+      <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+        <thead>
+          <tr>
+            <th>State_Id</th>
+            <th>State_Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-expanded="true">
+            <td>01</td>
+            <td>Gujarat</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Rajasthan</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Goa</td>
+          </tr>  
+            
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock%}

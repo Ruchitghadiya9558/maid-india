@@ -1,0 +1,58 @@
+{% extends 'myadmin/index.html' %}
+
+{% block content%}
+
+
+<section class="wrapper">
+		<div class="table-agile-info">
+ <div class="panel panel-default">
+    <div class="panel-heading">
+    All city 
+    </div>
+    <div>
+      <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+        <thead>
+          <tr>
+            <th data-breakpoints="xs"> City_ID</th>
+            <th>City Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-expanded="true">
+            <td>01</td>
+            <td>Ahmedabad</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Surat</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Rajkot</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Vadodara</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Nadiad</td>
+          </tr>
+
+            
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock%}

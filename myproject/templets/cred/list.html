@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Data</title>
+</head>
+<body>
+	<h1>List Example</h1>
+	<ul>
+		{% for row in data %}
+			<li>{{row.id}}----{{row.name}}-----{{row.contact}}</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

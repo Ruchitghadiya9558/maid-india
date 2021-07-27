@@ -1,0 +1,89 @@
+{% extends 'myadmin/index.html' %}
+
+{% block content%}
+
+
+<section class="wrapper">
+		<div class="table-agile-info">
+ <div class="panel panel-default">
+    <div class="panel-heading">
+     All maid application
+    </div>
+    <div>
+      <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+        <thead>
+          <tr>
+            <th>maid_Id</th>
+            <th>first_Name</th>
+            <th>Last_name</th>
+            <th>Dob</th>
+            <th>city_id</th>
+            <th>Address</th>
+            <th>State_id</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Gender</th>
+           <!--  <th>Status</th>
+            <th>image</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-expanded="true">
+            <th>01</th>
+            <th>ruchit</th>
+            <th>patel</th>
+            <th>16/11/1998</th>
+            <th>01</th>
+            <th>24,new ganesh</th>
+            <th>01</th>
+            <th>ruc@gmail.com</th>
+            <th>9558410248</th>
+            <th>male</th>
+            <!-- <th>married</th>
+            <th>image</th>
+ -->          </tr>
+          <tr>
+            <th>02</th>
+            <th>prince</th>
+            <th>patel</th>
+            <th>10/09/2020</th>
+            <th>02</th>
+            <th>25, nikol</th>
+            <th>02</th>
+            <th>prince@gmail.com</th>
+            <th>8238330691</th>
+            <th>male</th>
+            <!-- <th>unmarried</th>
+            <th>image</th> -->
+          </tr>
+          <tr>
+            <th>03</th>
+            <th>rahul</th>
+            <th>patel</th>
+            <th>10/08/1998</th>
+            <th>03</th>
+            <th>20,hiravadi</th>
+            <th>03</th>
+            <th>rahul@gmail.com</th>
+            <th>9558410248</th>
+            <th>male</th>
+           <!--  <th>married</th>
+            <th>image</th> -->
+          </tr>  
+            
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock%}

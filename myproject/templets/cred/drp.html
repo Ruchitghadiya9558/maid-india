@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Example</title>
+</head>
+<body>
+	<h1>drop down example</h1>
+	<select>
+		{% for row in data %}
+			<option value="{{row.name}}">{{row.name}}</option>
+		{% endfor %}	
+	</select>
+</body>
+</html>

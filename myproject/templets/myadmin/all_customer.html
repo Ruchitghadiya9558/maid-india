@@ -1,0 +1,74 @@
+{% extends 'myadmin/index.html' %}
+
+{% block content%}
+
+
+<section class="wrapper">
+		<div class="table-agile-info">
+ <div class="panel panel-default">
+    <div class="panel-heading">
+     All customer
+    </div>
+    <div>
+      <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FName</th>
+            <th>Lname</th>
+            <th>Dob</th>
+            <th>city_id</th>
+            <th>Address</th>
+            <th>email_id</th>
+            <th>contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-expanded="true">
+            <td>01</td>
+            <td>ruchit</td>
+            <th>patel</th>
+            <th>16/11/1998</th>
+            <th>ahmedabad</th>
+            <th>24,new nikol</th>
+            <td>ruc@gmail.com</td>
+            <td>9558410248</td>
+            
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>rahul</td>
+            <th>patel</th>
+            <th>12/11/1998</th>
+            <th>ahmedabad</th>
+            <th>24,new nikol</th>
+            <td>rahu@gmail.com</td>
+            <td>9558410248</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>prince</td>
+            <th>patel</th>
+            <th>10/11/1998</th>
+            <th>surat</th>
+            <th>24,new nikol</th>
+            <td>prince@gmail.com</td>
+            <td>9558410248</td>
+          </tr>  
+            
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock%}
